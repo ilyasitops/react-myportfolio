@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <div className="container px-8 mx-auto">
         <Navbar />
         <Hero />
+        <About />
       </div>
     </div>
   );
