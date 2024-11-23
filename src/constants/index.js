@@ -36,44 +36,44 @@ export const EXPERIENCES = [
       "Montage vidéo",
       "Collaboration à distance",
       "Respect des délais",
-      "Adobe Premiere",
+      "Suite Adobe (Photoshop, Premiere Pro, After Effect)",
     ],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Site de réservation de billets de train",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["HTML", "CSS", "JavaScript", "PSQL"],
   },
   {
-    title: "Task Management App",
+    title: "Snake Game",
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["Java", "Intellij", "Git"],
   },
   {
-    title: "Portfolio Website",
+    title: "Mise en place d'une machine virtuelle",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["Bash", "Linux", "C"],
   },
   {
-    title: "Blogging Platform",
+    title: "Site Portfolio",
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    technologies: ["React", "Tailwind CSS", "JavaScript XML", "Framer Motion"],
   },
 ];
 
 export const CONTACT = {
-  address: "59 Chemin de Redondon, Montélimar, 26200 ",
+  address: "79 Av. de Chabeuil, 26000 Valence ",
   phoneNo: "07 68 79 14 05 ",
   email: "ilyas.bld8@gmail.com ",
 };
