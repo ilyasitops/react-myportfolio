@@ -3,7 +3,9 @@ import { EXPERIENCES } from "../constants";
 const Experiences = () => {
   return (
     <div className="pb-4 border-b border-neutral-900">
-      <h1 className="my-20 text-4xl text-center">Experiences</h1>
+      <h1 className="my-20 text-4xl text-center">
+        Experiences professionelles
+      </h1>
       <div>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="flex flex-wrap mb-8 lg:justify-center">

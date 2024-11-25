@@ -14,9 +14,9 @@ export const EXPERIENCES = [
     company: "Résidence étudiante",
     description: `Responsable de la gestion et de la communication au sein de la résidence. Coordination des activités quotidiennes et résolution des conflits pour assurer un environnement harmonieux. Développement de compétences en gestion d'équipe, patience et maîtrise du temps, tout en favorisant un cadre de vie respectueux et organisé.`,
     technologies: [
-      "Gestion d'équipe",
-      "Communication",
       "Organisation",
+      "Communication",
+      "Suite Office (Word, Excel)",
       "Canva",
     ],
   },
@@ -25,7 +25,12 @@ export const EXPERIENCES = [
     role: "Animateur en centre de loisirs",
     company: "Kid’O Vert",
     description: `Encadrement d’enfants dans un environnement ludique et sécurisé. Création d’activités adaptées pour stimuler la créativité et l’apprentissage. Mise en avant de la gestion du stress, de la patience et de l’interaction respectueuse avec les parents et les enfants.`,
-    technologies: ["Créativité", "Patience", "Gestion du stress", "Pédagogie"],
+    technologies: [
+      "Créativité",
+      "Patience",
+      "Gestion du stress",
+      "Suite Office (Word, Excel)",
+    ],
   },
   {
     year: "Été 2022",
@@ -46,29 +51,36 @@ export const PROJECTS = [
     title: "Site de réservation de billets de train",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "JavaScript", "PSQL"],
+      "Une application web interactive permettant la recherche, la réservation et la gestion de billets de train. Les utilisateurs peuvent se connecter, parcourir les horaires, ajouter des billets au panier, et finaliser leurs achats. L'interface est entièrement responsive et utilise des échanges de données avec une API pour récupérer et afficher les informations des trajets et des billets.",
+    technologies: ["HTML", "CSS", "JavaScript", "PSQL, GitLab"],
   },
   {
-    title: "Snake Game",
+    title: "Application de gestion des dépenses",
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["Java", "Intellij", "Git"],
+    technologies: ["PHP", "PhpStorm", "MySQL", "GitHub"],
   },
   {
     title: "Mise en place d'une machine virtuelle",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["Bash", "Linux", "C"],
+    technologies: ["Bash", "Linux", "C", "Git", "Vim", "VirtualBox"],
   },
   {
     title: "Site Portfolio",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["React", "Tailwind CSS", "JavaScript XML", "Framer Motion"],
+      "Un site web moderne et responsive conçu pour présenter mon profil de développeur front-end. Le portfolio comprend une navigation intuitive, une section hero avec une présentation personnelle, des technologies utilisées, une section projets pour mettre en avant les réalisations, une section expérience professionnelle, et un formulaire de contact. Construit avec Tailwind CSS pour un design élégant et Framer Motion pour des animations fluides.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "JavaScript XML (JSX)",
+      "Node.js",
+      "Framer Motion",
+      "GitHub",
+    ],
   },
 ];
 
