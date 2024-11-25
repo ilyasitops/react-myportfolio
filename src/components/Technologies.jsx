@@ -6,7 +6,7 @@ import { FaFigma, FaPython, FaGit, FaPhp } from "react-icons/fa6";
 const Technologies = () => {
   return (
     <div className="pb-24 border-b border-neutral-800">
-      <h1 className="my-20 text-4xl text-center">Technologies</h1>
+      <h2 className="my-20 text-4xl text-center">Technologies</h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <div className="p-4 border-4 rounded-2xl border-neutral-800">
           <RiReactjsLine className="text-7xl text-cyan-400" />

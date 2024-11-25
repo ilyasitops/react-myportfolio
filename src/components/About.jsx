@@ -9,12 +9,12 @@ const About = () => {
         <span className="text-neutral-500"> moi</span>
       </h1>
       <div className="flex flex-wrap">
-        <div className="lg:w-1/2 lg:p-8">
+        <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex items-center justify-center">
             <img className="rounded-2xl" src={AboutImg} alt="À propos de moi" />
           </div>
         </div>
-        <div className="lg:w1/2">
+        <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-start">
             <p className="max-w-xl py-6 my-2 font-light">{ABOUT_TEXT}</p>
           </div>
