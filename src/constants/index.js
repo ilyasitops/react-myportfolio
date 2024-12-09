@@ -55,24 +55,10 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "PSQL, GitLab"],
   },
   {
-    title: "Application de gestion des dépenses",
+    title: "Site Portfolio",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["PHP", "PhpStorm", "MySQL", "GitHub"],
-  },
-  {
-    title: "Mise en place d'une machine virtuelle",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["Bash", "Linux", "C", "Git", "Vim", "VirtualBox"],
-  },
-  {
-    title: "Site Portfolio",
-    image: project4,
-    description:
-      "Un site web moderne et responsive conçu pour présenter mon profil de développeur front-end. Le portfolio comprend une navigation intuitive, une section hero avec une présentation personnelle, des technologies utilisées, une section projets pour mettre en avant les réalisations, une section expérience professionnelle, et un formulaire de contact. Construit avec Tailwind CSS pour un design élégant et Framer Motion pour des animations fluides.",
+      "Un site web moderne et responsive conçu pour présenter mon profil de développeur front-end.. Le portfolio comprend une navigation intuitive, une section hero avec une présentation personnelle, des technologies utilisées, une section projets pour mettre en avant les réalisations, une section expérience professionnelle, et un formulaire de contact. Construit avec Tailwind CSS pour un design élégant et Framer Motion pour des animations fluides.",
     technologies: [
       "React",
       "Tailwind CSS",
@@ -82,10 +68,41 @@ export const PROJECTS = [
       "GitHub",
     ],
   },
+  {
+    title: "Mise en place d'un serveur de développement web",
+    image: project3,
+    description:
+      "Un projet éducatif visant à configurer un serveur dédié pour le développement web avec PHP et MySQL. L'objectif est de permettre aux développeurs de notre organisation de travailler dans un environnement collaboratif, accessible via le réseau, et sans interface graphique. Le projet inclut la configuration d'un serveur web, d'outils tels que Symfony et Composer, et l'implémentation d'un partage réseau sécurisé via NFS. Des scripts automatisent la création d'utilisateurs et de bases de données, et les tests de validation assurent une utilisation fluide et efficace.",
+    technologies: [
+      "Bash",
+      "Linux",
+      "PHP",
+      "MySQL",
+      "Apache",
+      "NFS",
+      "VirtualBox",
+    ],
+  },
+  {
+    title: "Application de suivi des dépenses quotidiennes",
+    image: project4,
+    description:
+      "Une application web interactive conçue pour suivre les revenus et dépenses quotidiens, adaptée spécifiquement pour aider les utilisateurs, tels que les ménagères, à gérer leur budget de manière efficace. Ce système divise les revenus en fonction des dépenses quotidiennes, ajuste automatiquement les montants autorisés pour les jours suivants en cas de dépassement ou d'économies, et génère un rapport mensuel détaillé montrant la courbe des revenus et dépenses. Il offre également la possibilité de gérer des économies dédiées à des événements spéciaux comme les anniversaires ou les fêtes, ainsi que des dépenses spéciales pouvant être remboursées.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "PhpStorm",
+      "MySQL",
+      "GitHub",
+      "XAMPP",
+    ],
+  },
 ];
 
 export const CONTACT = {
-  address: "79 Av. de Chabeuil, 26000 Valence ",
-  phoneNo: "07 68 79 14 05 ",
-  email: "ilyas.bld8@gmail.com ",
+  address: "79 Av. de Chabeuil, 26000 Valence",
+  phoneNo: "07 68 79 14 05",
+  email: "ilyas.bld8@gmail.com",
 };
