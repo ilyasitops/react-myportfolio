@@ -1,5 +1,15 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/Profile.png";
+import { motion } from "framer-motion";
+
+const container = (delay) => ({
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.5, delay: delay },
+  },
+});
 
 const Hero = () => {
   return (
@@ -7,12 +17,23 @@ const Hero = () => {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-            <h1 className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl">
+            <motion.h1
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+            >
               Ilyas BELAÏD
-            </h1>
-            <span className="text-4xl tracking-tight text-transparent bg-gradient-to-r from-cyan-300 via-slate-500 to-blue-500 bg-clip-text">
+            </motion.h1>
+            <motion.span
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.1 }}
+              drag="x"
+              dragConstraints={{ left: -100, right: 100 }}
+              className="text-4xl tracking-tight text-transparent bg-gradient-to-r from-cyan-300 via-slate-500 to-blue-500 bg-clip-text"
+            >
               Front-End Developer
-            </span>
+            </motion.span>
             <p className="max-w-xl py-6 my-2 font-light tracking-tighter">
               {HERO_CONTENT}
             </p>
