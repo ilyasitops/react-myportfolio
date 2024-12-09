@@ -103,6 +103,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "79 Av. de Chabeuil, 26000 Valence",
-  phoneNo: "07 68 79 14 05",
+  phoneNo: "0768791405",
   email: "ilyas.bld8@gmail.com",
 };

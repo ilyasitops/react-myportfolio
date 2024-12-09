@@ -1,21 +1,39 @@
 import { PROJECTS } from "../constants";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <div className="pb-4 border-b border-neutral-900">
-      <h2 className="my-20 text-4xl text-center">Projets</h2>
+      <motion.h2
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="my-20 text-4xl text-center"
+      >
+        Projets
+      </motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className="flex flex-wrap mb-8 lg:justify-center">
-            <div className="w-full lg:w-1/4">
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-1/4"
+            >
               <img
                 src={project.image}
                 width={150}
                 height={150}
                 alt={project.title}
               />
-            </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            </motion.div>
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="w-full max-w-xl lg:w-3/4"
+            >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p class name="mb-4 text-neutral-400">
                 {project.description}
@@ -28,7 +46,7 @@ const Projects = () => {
                   {tech}
                 </span>
               ))}
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

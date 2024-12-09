@@ -18,30 +18,44 @@ const Hero = () => {
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
             <motion.h1
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              variants={container(0)}
+              initial="hidden"
+              animate="visible"
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
               Ilyas BELAÏD
             </motion.h1>
             <motion.span
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 1.1 }}
-              drag="x"
-              dragConstraints={{ left: -100, right: 100 }}
+              variants={container(0.2)}
+              initial="hidden"
+              animate="visible"
+              // whileHover={{ scale: 1.2 }}
+              // whileTap={{ scale: 1.1 }}
+              // drag="x"
+              // dragConstraints={{ left: -100, right: 100 }}
               className="text-4xl tracking-tight text-transparent bg-gradient-to-r from-cyan-300 via-slate-500 to-blue-500 bg-clip-text"
             >
               Front-End Developer
             </motion.span>
-            <p className="max-w-xl py-6 my-2 font-light tracking-tighter">
+            <motion.p
+              variants={container(0.4)}
+              initial="hidden"
+              animate="visible"
+              className="max-w-xl py-6 my-2 font-light tracking-tighter"
+            >
               {HERO_CONTENT}
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            <img src={profilePic} alt="Ilyas BELAÏD" />
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              src={profilePic}
+              alt="Ilyas BELAÏD"
+            />
           </div>
         </div>
       </div>

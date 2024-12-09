@@ -1,18 +1,34 @@
 import { EXPERIENCES } from "../constants";
+import { motion } from "framer-motion";
 
 const Experiences = () => {
   return (
     <div className="pb-4 border-b border-neutral-900">
-      <h1 className="my-20 text-4xl text-center">
+      <motion.h1
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        className="my-20 text-4xl text-center"
+      >
         Experiences professionelles
-      </h1>
+      </motion.h1>
       <div>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="flex flex-wrap mb-8 lg:justify-center">
-            <div className="w-full lg:w-1/4">
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-1/4"
+            >
               <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
-            </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            </motion.div>
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="w-full max-w-xl lg:w-3/4"
+            >
               <h6 className="mb-2 font-semibold">
                 {experience.role} -{" "}
                 <span className="text-sm text-purple-100">
@@ -29,7 +45,7 @@ const Experiences = () => {
                   {tech}
                 </span>
               ))}
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

@@ -1,24 +1,35 @@
 import AboutImg from "../assets/About.jpg";
 import { ABOUT_TEXT } from "../constants";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="pb-4 border-b border-neutral-900">
-      <h1 className="my-20 text-4xl text-center">
+      <motion.h1 className="my-20 text-4xl text-center">
         À propos de
         <span className="text-neutral-500"> moi</span>
-      </h1>
+      </motion.h1>
       <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2 lg:p-8">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-full lg:w-1/2 lg:p-8"
+        >
           <div className="flex items-center justify-center">
             <img className="rounded-2xl" src={AboutImg} alt="À propos de moi" />
           </div>
-        </div>
-        <div className="w-full lg:w-1/2">
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-full lg:w-1/2"
+        >
           <div className="flex justify-center lg:justify-start">
             <p className="max-w-xl py-6 my-2 font-light">{ABOUT_TEXT}</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
