@@ -2,16 +2,46 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
+import project6 from "../assets/projects/project-6.jpg";
 
-export const HERO_CONTENT = `Je suis un développeur front-end passionné, spécialisé dans la création d'applications web intuitives et performantes. Avec une expérience pratique en HTML, CSS, PHP et JavaScript, je conçois des solutions centrées sur l'utilisateur, en mettant l'accent sur la sécurité, les performances et l'accessibilité. Je m'épanouis dans des environnements collaboratifs, en utilisant des outils comme Git et les méthodologies Agiles pour livrer des applications de haute qualité répondant aux besoins des utilisateurs.`;
+export const HERO_CONTENT = `Actuellement en troisième année de BUT Informatique à l’IUT de Valence, je réalise mon alternance en tant qu’Administrateur IT chez Adequasys. Passionné par le développement web et l’architecture système, mon objectif est d'évoluer vers des postes de Chef de projet, d'Architecte Cloud ou d'Ingénieur DevOps.`;
 
-export const ABOUT_TEXT = `Je suis un développeur front-end dédié et motivé, passionné par la création d'applications web conviviales. Mon parcours dans le développement web a été guidé par la curiosité et un engagement envers l'excellence. Fort d'une expertise solide en HTML, CSS, PHP, JavaScript et gestion de bases de données, j'ai développé des applications qui allient performance et ergonomie. J'excelle dans le travail en équipe, en tirant parti de Git et des workflows Agiles pour assurer une livraison fluide des projets. Mon approche met l'accent sur la création de solutions sécurisées, ergonomiques et évolutives, alignées sur les objectifs des utilisateurs et des entreprises. En dehors du développement, je suis passionné par l'escalade, le montage vidéo et je reste actif à travers des sports comme la musculation.`;
+export const ABOUT_TEXT = `Étudiant motivé par la création d'applications performantes, j'ai acquis de solides compétences en HTML, CSS, JavaScript, React, PHP et MySQL. Mon parcours m'a permis de travailler sur des solutions full-stack critiques lors de mon stage chez LAB Manufacture, tout en développant une expertise en support IT et DevOps au sein d'Adequasys. J'accorde une importance particulière à l'expérience utilisateur et à l'optimisation des performances. En dehors du développement, je suis passionné par le montage vidéo et la musculation.`;
 
 export const EXPERIENCES = [
   {
+    year: "Septembre 2025 - Présent",
+    role: "Administrateur IT (Alternance)",
+    company: "Adequasys",
+    description: `Gestion du support IT et administration de plateformes Cloud (OVH, Oracle) dans un environnement international. Mise en œuvre de solutions DevOps (Docker, Kubernetes, Ansible, Terraform) pour optimiser les déploiements et la fiabilité des systèmes.`,
+    technologies: [
+      "Docker",
+      "Kubernetes",
+      "Ansible",
+      "Terraform",
+      "Cloud (OVH, Oracle)",
+      "Support IT",
+    ],
+  },
+  {
+    year: "Mars 2025 - Juillet 2025",
+    role: "Développeur Full-Stack (Stage)",
+    company: "LAB Manufacture",
+    description: `Développement d'un connecteur PrestaShop ↔ SAP B1 pour l'automatisation des flux de données. Conception d'une application interne de suivi des commandes et de la production (React & PHP). Finalisation d'un site e-commerce avec configurateur de commande.`,
+    technologies: [
+      "React",
+      "PHP",
+      "MySQL",
+      "SAP B1",
+      "PrestaShop",
+      "JavaScript",
+    ],
+  },
+  {
     year: "Octobre 2024 - Présent",
     role: "Référent en résidence",
-    company: "Résidence étudiante",
+    company: "Crous de Grenoble",
     description: `Responsable de la gestion et de la communication au sein de la résidence. Coordination des activités quotidiennes et résolution des conflits pour assurer un environnement harmonieux. Développement de compétences en gestion d'équipe, patience et maîtrise du temps, tout en favorisant un cadre de vie respectueux et organisé.`,
     technologies: [
       "Organisation",
@@ -32,18 +62,6 @@ export const EXPERIENCES = [
       "Suite Office (Word, Excel)",
     ],
   },
-  {
-    year: "Été 2022",
-    role: "Monteur vidéo",
-    company: "Trash - Club Pingouin",
-    description: `Production et montage de contenu vidéo en collaboration avec une équipe de monteurs. Respect des deadlines et intégration rapide des retours pour garantir une qualité optimale. Coordination à distance pour une communication efficace sur les projets.`,
-    technologies: [
-      "Montage vidéo",
-      "Collaboration à distance",
-      "Respect des délais",
-      "Suite Adobe (Photoshop, Premiere Pro, After Effect)",
-    ],
-  },
 ];
 
 export const PROJECTS = [
@@ -52,13 +70,14 @@ export const PROJECTS = [
     image: project1,
     description:
       "Une application web interactive permettant la recherche, la réservation et la gestion de billets de train. Les utilisateurs peuvent se connecter, parcourir les horaires, ajouter des billets au panier, et finaliser leurs achats. L'interface est entièrement responsive et utilise des échanges de données avec une API pour récupérer et afficher les informations des trajets et des billets.",
-    technologies: ["HTML", "CSS", "JavaScript", "PSQL, GitLab"],
+    technologies: ["HTML", "CSS", "JavaScript", "PSQL", "GitLab"],
+    github: "https://github.com/ilyasitops/locolink",
   },
   {
     title: "Site Portfolio",
     image: project2,
     description:
-      "Un site web moderne et responsive conçu pour présenter mon profil de développeur front-end.. Le portfolio comprend une navigation intuitive, une section hero avec une présentation personnelle, des technologies utilisées, une section projets pour mettre en avant les réalisations, une section expérience professionnelle, et un formulaire de contact. Construit avec Tailwind CSS pour un design élégant et Framer Motion pour des animations fluides.",
+      "Un site web moderne et responsive conçu pour présenter mon profil de développeur front-end. Le portfolio comprend une navigation intuitive, une section hero avec une présentation personnelle, des technologies utilisées, une section projets pour mettre en avant les réalisations, une section expérience professionnelle, et un formulaire de contact. Construit avec Tailwind CSS pour un design élégant et Framer Motion pour des animations fluides.",
     technologies: [
       "React",
       "Tailwind CSS",
@@ -67,37 +86,42 @@ export const PROJECTS = [
       "Framer Motion",
       "GitHub",
     ],
+    github: "https://github.com/ilyasitops/react-myportfolio",
   },
   {
-    title: "Mise en place d'un serveur de développement web",
+    title: "AIFants",
     image: project3,
     description:
-      "Un projet éducatif visant à configurer un serveur dédié pour le développement web avec PHP et MySQL. L'objectif est de permettre aux développeurs de notre organisation de travailler dans un environnement collaboratif, accessible via le réseau, et sans interface graphique. Le projet inclut la configuration d'un serveur web, d'outils tels que Symfony et Composer, et l'implémentation d'un partage réseau sécurisé via NFS. Des scripts automatisent la création d'utilisateurs et de bases de données, et les tests de validation assurent une utilisation fluide et efficace.",
+      "Simulation de colonie de fourmis utilisant le Q-learning (IA). Visualisation en temps réel via Tkinter des déplacements, de la collecte de nourriture et de l'évolution des Q-Tables. Inclut un méta-programme d'optimisation des performances.",
+    technologies: ["Python", "Numpy", "Tkinter", "Q-learning"],
+    github: "https://github.com/ilyasitops/aifants",
+  },
+  {
+    title: "Renouvellement de parc informatique",
+    image: project4,
+    description:
+      "Pilotage et exécution du remplacement de 40 postes de travail pour Adequasys. Optimisation du workflow de déploiement, masterisation des postes et gestion de la logistique dans un contexte d'entreprise international.",
+    technologies: ["MDT", "Windows", "Réseau", "Logistique"],
+  },
+  {
+    title: "Connecteur PrestaShop ↔ SAP B1",
+    image: project5,
+    description:
+      "Automatisation des flux de données entre PrestaShop et l'ERP SAP Business One pour supprimer les ressaisies manuelles. Utilisation d'une base MySQL intermédiaire pour structurer et valider les données avant synchronisation.",
     technologies: [
-      "Bash",
-      "Linux",
       "PHP",
       "MySQL",
-      "Apache",
-      "NFS",
-      "VirtualBox",
+      "SAP B1",
+      "PrestaShop",
+      "API Service Layer",
     ],
   },
   {
-    title: "Application de suivi des dépenses quotidiennes",
-    image: project4,
+    title: "Suivi de production Risuola",
+    image: project6,
     description:
-      "Une application web interactive conçue pour suivre les revenus et dépenses quotidiens, adaptée spécifiquement pour aider les utilisateurs, tels que les ménagères, à gérer leur budget de manière efficace. Ce système divise les revenus en fonction des dépenses quotidiennes, ajuste automatiquement les montants autorisés pour les jours suivants en cas de dépassement ou d'économies, et génère un rapport mensuel détaillé montrant la courbe des revenus et dépenses. Il offre également la possibilité de gérer des économies dédiées à des événements spéciaux comme les anniversaires ou les fêtes, ainsi que des dépenses spéciales pouvant être remboursées.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "PHP",
-      "PhpStorm",
-      "MySQL",
-      "GitHub",
-      "XAMPP",
-    ],
+      "Application React permettant aux opérateurs de suivre en temps réel l'avancement des commandes et les personnalisations techniques. Interface connectée à un backend PHP pour interroger l'ERP.",
+    technologies: ["React", "PHP", "JavaScript", "Tailwind CSS", "Notion"],
   },
 ];
 

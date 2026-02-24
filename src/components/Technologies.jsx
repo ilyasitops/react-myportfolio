@@ -1,4 +1,4 @@
-import { RiReactjsLine } from "react-icons/ri";
+import { RiReactjsLine, RiVuejsLine } from "react-icons/ri";
 import {
   FaNodeJs,
   FaFigma,
@@ -12,6 +12,7 @@ import {
   FaCss3,
   FaJs,
   FaTrello,
+  FaGithub,
 } from "react-icons/fa6";
 import { BiLogoPostgresql, BiLogoBlender } from "react-icons/bi";
 import {
@@ -24,6 +25,16 @@ import {
   SiAdobepremierepro,
   SiAdobeaftereffects,
   SiMysql,
+  SiDocker,
+  SiKubernetes,
+  SiAnsible,
+  SiTerraform,
+  SiSap,
+  SiPrestashop,
+  SiCanva,
+  SiNotion,
+  SiPrisma,
+  SiGitlab,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -167,6 +178,20 @@ const Technologies = () => {
             <FiFramer className="text-pink-500 text-7xl" />
           </motion.div>
         </a>
+        <a
+          href="https://vuejs.org/guide/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <RiVuejsLine className="text-green-400 text-7xl" />
+          </motion.div>
+        </a>
       </motion.div>
 
       <motion.h3
@@ -267,6 +292,92 @@ const Technologies = () => {
             <SiMysql className="text-blue-500 text-7xl" />
           </motion.div>
         </a>
+        <a
+          href="https://www.prisma.io/docs/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiPrisma className="text-blue-300 text-7xl" />
+          </motion.div>
+        </a>
+      </motion.div>
+
+      <motion.h3
+        className="my-10 text-3xl text-center"
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+      >
+        DevOps / Infrastructure
+      </motion.h3>
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-wrap items-center justify-center gap-4"
+      >
+        <a
+          href="https://www.docker.com/docs/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiDocker className="text-blue-500 text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://kubernetes.io/docs/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiKubernetes className="text-blue-600 text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://docs.ansible.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiAnsible className="text-red-600 text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://www.terraform.io/docs/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiTerraform className="text-purple-600 text-7xl" />
+          </motion.div>
+        </a>
       </motion.div>
 
       <motion.h3
@@ -295,6 +406,34 @@ const Technologies = () => {
             className="p-4 border-4 rounded-2xl border-neutral-800"
           >
             <FaGit className="text-red-400 text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <FaGithub className="text-white text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://gitlab.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiGitlab className="text-orange-500 text-7xl" />
           </motion.div>
         </a>
         <a
@@ -393,6 +532,62 @@ const Technologies = () => {
             className="p-4 border-4 rounded-2xl border-neutral-800"
           >
             <SiPhpstorm className="text-purple-500 text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://www.sap.com/products/erp/b1/what-is.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiSap className="text-blue-500 text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://www.prestashop.com/en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(3.5)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiPrestashop className="text-green-600 text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://www.canva.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiCanva className="text-blue-400 text-7xl" />
+          </motion.div>
+        </a>
+        <a
+          href="https://www.notion.so/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            variants={iconVariants(4.5)}
+            initial="initial"
+            animate="animate"
+            className="p-4 border-4 rounded-2xl border-neutral-800"
+          >
+            <SiNotion className="text-white text-7xl" />
           </motion.div>
         </a>
       </motion.div>

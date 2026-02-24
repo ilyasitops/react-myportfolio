@@ -35,7 +35,7 @@ const Hero = () => {
               // dragConstraints={{ left: -100, right: 100 }}
               className="text-4xl tracking-tight text-transparent bg-gradient-to-r from-cyan-300 via-slate-500 to-blue-500 bg-clip-text"
             >
-              Front-End Developer
+              Aspiring DevOps Engineer
             </motion.span>
             <motion.p
               variants={container(0.4)}
