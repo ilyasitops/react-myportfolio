@@ -77,7 +77,7 @@ export const PROJECTS = [
     title: "Site Portfolio",
     image: project2,
     description:
-      "Un site web moderne et responsive conçu pour présenter mon profil de développeur front-end. Le portfolio comprend une navigation intuitive, une section hero avec une présentation personnelle, des technologies utilisées, une section projets pour mettre en avant les réalisations, une section expérience professionnelle, et un formulaire de contact. Construit avec Tailwind CSS pour un design élégant et Framer Motion pour des animations fluides.",
+      "Un site web moderne et responsive conçu pour présenter mon profil de développeur full-stack. Le portfolio comprend une navigation intuitive, une section hero avec une présentation personnelle, des technologies utilisées, une section projets pour mettre en avant les réalisations, une section expérience professionnelle, et un formulaire de contact. Construit avec Tailwind CSS pour un design élégant et Framer Motion pour des animations fluides.",
     technologies: [
       "React",
       "Tailwind CSS",
